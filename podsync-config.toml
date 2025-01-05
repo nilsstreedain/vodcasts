@@ -10,9 +10,14 @@ hostname = "https://vodcast.nilsstreedain.com"
 youtube = "..."
 
 [feeds]
+  # Example Feed 1
+  [feeds.nilsstreedain]
+  url = "https://www.youtube.com/channel/UCJokgAY3LOUvDZFboUb90CQ"
+  private_feed = true
+
+  # Example Feed 2
   [feeds.LinusTechTips]
   url = "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw"
-  page_size = 10
   clean = { keep_last = 10 }
   filters = { min_duration = 60, max_duration = 7200, max_age = 30 }
   private_feed = true
