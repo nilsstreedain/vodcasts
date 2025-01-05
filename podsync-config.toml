@@ -1,0 +1,22 @@
+[server]
+port = 80
+hostname = "https://vodcast.nilsstreedain.com"
+
+[storage]
+  [storage.local]
+  data_dir = "/app/data"
+
+[tokens]
+youtube = "..."
+
+[feeds]
+  [feeds.LinusTechTips]
+  url = "https://www.youtube.com/channel/UCXuqSBlHAE6Xw-yeJA0Tunw"
+  page_size = 10
+  clean = { keep_last = 10 }
+  filters = { min_duration = 60, max_duration = 7200, max_age = 30 }
+  private_feed = true
+
+[downloader]
+self_update = true
+timeout = 60
